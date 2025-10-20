@@ -12,7 +12,7 @@ public class StudentGroup {
         return this.groupName;
     }
     int getStudentCount() {
-        return getStudentCount();
+        return this.studentCount;
     }
     void setGroupName(String newGroupName){
         this.groupName = newGroupName;
