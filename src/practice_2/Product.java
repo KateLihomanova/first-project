@@ -20,6 +20,6 @@ public class Product {
         return this.price;
     }
     void printInfo() {
-        System.out.println("Товар: " + this.name + " Его цена: " + this.price + "скидка" + this.price);
+        System.out.println("Товар: " + this.name + " Его цена: " + this.price + " скидка " + this.price);
     }
 }
