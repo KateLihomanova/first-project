@@ -8,18 +8,19 @@ public class Rectangle {
         this.width = width;
         this.height = height;
     }
-
     int getWidth() {
         return this.width;
     }
     int getHeight() {
         return this.height;
     }
-
-    void setWidth(int newWidth){
+    void setWidth(int newWidth) {
         this.width = newWidth;
     }
+
     int calculateArea() {
-        return this.width * this.height;
+        return this.height * this.width;
     }
+
+
 }

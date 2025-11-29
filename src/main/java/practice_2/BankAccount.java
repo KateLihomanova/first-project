@@ -2,9 +2,9 @@ package practice_2;
 
 public class BankAccount {
     String owner;
-    double balance;
+    int balance;
 
-    BankAccount(String owner, double balance) {
+    BankAccount(String owner, int balance) {
         this.owner = owner;
         this.balance = balance;
     }
@@ -14,15 +14,16 @@ public class BankAccount {
     void setOwner(String newOwner) {
         this.owner = newOwner;
     }
-    double deposit(double amount) {
+    int deposit(int amount){
         this.balance = this.balance + amount;
         return this.balance;
     }
-    double withdraw(double amount) {
+    int withdraw(int amount) {
         this.balance = this.balance - amount;
         return this.balance;
     }
     void printBalance() {
-        System.out.println("Ваш баланс: " + this.balance);
+        System.out.println(this.balance);
     }
+
 }

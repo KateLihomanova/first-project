@@ -6,28 +6,29 @@ public class Library {
     int year;
     public String category;
 
-    String getBookTitle(){
+    String getBookTitle() {
         return this.bookTitle;
     }
-    String getAuthor(){
+    String getAuthor() {
         return this.author;
     }
-    int getYear(){
+    int getYear() {
         return this.year;
     }
-    String getCategory(){
+    String getCategory() {
         return this.category;
     }
-    void setBookTitle(String newBookTitle){
+    void setBookTitle(String newBookTitle) {
         this.bookTitle = newBookTitle;
     }
-    void setAuthor(String newAuthor){
+    void setAuthor(String newAuthor) {
         this.author = newAuthor;
     }
-    void  setYear(int newYear){
+    void setYear(int newYear) {
         this.year = newYear;
     }
-    void setCategory(String newCategory){
+    void setCategory(String newCategory) {
         this.category = newCategory;
     }
+
 }
