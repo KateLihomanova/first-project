@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 public class InventoryService {
-    public static boolean isInventoryOpen = true;
+    public boolean isInventoryOpen = true;
     private  Map<String, List<Product>> inventory = new HashMap<>();
 
     public void setInventoryOpen(boolean open) {

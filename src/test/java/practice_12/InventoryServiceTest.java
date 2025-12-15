@@ -11,8 +11,8 @@ public class InventoryServiceTest {
         InventoryService service = new InventoryService();
         Product cottageCheese = new Product("Творог", 80, "Молочные продукты");
         service.addProduct(cottageCheese);
-        Product retrieved = service.getProductByCategory("Electronics");
-        assertEquals("Phone", retrieved.getName());
+        Product retrieved = service.getProductByCategory("Молочные продукты");
+        assertEquals("Творог", retrieved.getName());
     }
 
     @Test

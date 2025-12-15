@@ -32,7 +32,7 @@ public class EntityManagerTest {
         manager.addElement(new Person("Sasha", 20, true));
         manager.addElement(new Person("Dasha", 35, false));
         manager.addElement(new Person("Petya", 50, true));
-        List<Person> result = manager.filterByAge(30, 40);
+        List<Person> result = manager.filterData(person -> person.getAge() >= 30 && person.getAge() <= 40);
         assertEquals(1, result.size());
         assertEquals("Dasha", result.get(0).getName());
     }
@@ -42,7 +42,7 @@ public class EntityManagerTest {
         EntityManager<Person> manager = new EntityManager<>();
         manager.addElement(new Person("Klava", 28, true));
         manager.addElement(new Person("klava", 31, false));
-        List<Person> result = manager.filterByName("Klava");
+        List<Person> result = manager.filterData(person -> person.getName().equalsIgnoreCase("Klava"));
         assertEquals(2, result.size());
     }
 
@@ -51,7 +51,7 @@ public class EntityManagerTest {
         EntityManager<Person> manager = new EntityManager<>();
         manager.addElement(new Person("Tom", 33, true));
         manager.addElement(new Person("Mary", 41, false));
-        List<Person> result = manager.filterByActivity(true);
+        List<Person> result = manager.filterData(person -> person.isActive() == true);
         assertEquals(1, result.size());
         assertEquals("Tom", result.get(0).getName());
     }
